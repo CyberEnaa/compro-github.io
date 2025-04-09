@@ -24,17 +24,22 @@ header {
   color: #c26c4d;
 }
 
-nav ul {
+nav#nav-menu ul {
   display: flex;
   list-style: none;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-nav a {
+nav#nav-menu ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .hero {
@@ -86,14 +91,7 @@ nav a {
   border-radius: 10px;
 }
 
-/* Default hamburger (hidden on desktop) */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Responsive menu */
+/* RESPONSIVE: Hamburger & menu */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -103,7 +101,6 @@ nav a {
   nav#nav-menu {
     display: none;
     width: 100%;
-    margin-top: 10px;
   }
 
   nav#nav-menu.active {
@@ -113,56 +110,18 @@ nav a {
   nav#nav-menu ul {
     flex-direction: column;
     gap: 10px;
+    padding: 10px 0;
     background-color: #fff;
-    padding: 10px;
     border-radius: 6px;
   }
 
   nav#nav-menu ul li {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 6px;
-  }
-
-  nav#nav-menu ul li:last-child {
-    border-bottom: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
   }
 
   header {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
-
-
-/* RESPONSIVE STYLES */
-@media screen and (max-width: 768px) {
-  header {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-  }
-
-  .cta-btn {
-    padding: 14px 20px;
-    font-size: 16px;
   }
 }
