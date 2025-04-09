@@ -86,6 +86,54 @@ nav a {
   border-radius: 10px;
 }
 
+/* Default hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive menu */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #333;
+  }
+
+  nav#nav-menu {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav#nav-menu.active {
+    display: block;
+  }
+
+  nav#nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  nav#nav-menu ul li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+  }
+
+  nav#nav-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
 /* RESPONSIVE STYLES */
 @media screen and (max-width: 768px) {
   header {
