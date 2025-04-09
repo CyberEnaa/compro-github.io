@@ -6,15 +6,16 @@
 }
 
 body {
-  background-color: #fff;
+  background: linear-gradient(to bottom, #d18265, #f7e0d1);
   color: #333;
 }
 
 header {
+  background: transparent;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
   flex-wrap: wrap;
 }
 
@@ -45,11 +46,7 @@ nav#nav-menu ul li a {
 }
 
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #d18265, #f7e0d1);
+  background: transparent; /* biar ngikut body */
   padding: 60px 30px;
 }
 
