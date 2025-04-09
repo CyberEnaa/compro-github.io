@@ -99,11 +99,17 @@ nav#nav-menu ul li a {
   }
 
   nav#nav-menu {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
     display: none;
     width: 100%;
   }
 
   nav#nav-menu.active {
+  max-height: 500px;
+  opacity: 1;
     display: block;
   }
 
