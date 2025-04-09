@@ -7,9 +7,9 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #d18265, #f7e0d1);
+  background-color: #d18265;
+  color: #fff;
 }
-
 
 header {
   background: transparent;
@@ -23,7 +23,7 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(to right, #d18265, #f7e0d1);
+  background: linear-gradient(to right, #f7c3a1, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -36,7 +36,7 @@ nav#nav-menu ul {
 
 nav#nav-menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -44,6 +44,7 @@ nav#nav-menu ul li a {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  color: #fff;
 }
 
 .hero {
@@ -110,14 +111,13 @@ nav#nav-menu.active {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
-    color: #333;
   }
 
   nav#nav-menu ul {
     flex-direction: column;
     gap: 10px;
     padding: 10px 0;
-    background-color: #fff;
+    background-color: #d18265;
     border-radius: 6px;
   }
 
@@ -134,4 +134,4 @@ nav#nav-menu.active {
     flex-direction: column;
     align-items: flex-start;
   }
-    }
+  }
